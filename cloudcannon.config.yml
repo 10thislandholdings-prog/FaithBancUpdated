@@ -1,0 +1,94 @@
+# =============================================================================
+# CloudCannon Configuration — Faith Banc Landing Page
+# =============================================================================
+# This file tells CloudCannon how to handle your site:
+#   • Where the source files live
+#   • Which files editors can edit
+#   • What the WYSIWYG toolbars look like for editable regions
+#
+# Place this file at the ROOT of your repository, alongside `index.html`.
+# CloudCannon reads it automatically.
+# =============================================================================
+
+
+# ---------- SITE TYPE ----------
+# We're a plain static HTML site (no static-site generator like Hugo/Jekyll/Eleventy).
+# `static` tells CloudCannon to serve files as-is, no build step required.
+ssg: static
+
+
+# ---------- PATHS ----------
+# `source` is the folder CloudCannon treats as the site root. Empty string means
+# the repository root (which is where index.html lives).
+paths:
+  uploads: assets/uploads      # New images uploaded via the editor land here
+  static: ""                   # Static assets served from the root
+
+
+# ---------- COLLECTIONS ----------
+# A "collection" is a group of files editors can browse and edit. We have one
+# collection: the pages themselves (just index.html for now, but easy to add more).
+collections_config:
+  pages:
+    path: ""                   # Pages live at the repo root
+    output: true               # These files are part of the deployed site
+    filter:
+      base: strict             # Only show files we explicitly include below
+    include:
+      - "index.html"           # The landing page
+    # Add more pages here later by creating new HTML files and listing them.
+    # Example:
+    #   - "about.html"
+    #   - "thank-you.html"
+    name: Pages
+    icon: web                  # Material Icons name shown in the sidebar
+
+
+# ---------- DEFAULT EDITOR ----------
+# Open the Visual Editor when editors click a page (vs. the raw HTML source view).
+_inputs:
+  default:
+    instance_value: UUID
+
+_editor:
+  default_path: "/index.html"
+
+
+# ---------- WYSIWYG TOOLBAR ----------
+# This controls what formatting buttons appear when an editor clicks an
+# `editable` region in the Visual Editor. We've kept it intentionally minimal
+# — bold, italic, links — to prevent editors from accidentally pasting in
+# weirdly-formatted text from Word or Google Docs that breaks the design.
+_editables:
+  # `text` applies to inline elements (h1, h2, h3, p, span, etc. with class="editable")
+  text:
+    bold: true
+    italic: true
+    link: true
+    removeformat: true         # Strip pasted formatting — protects your design
+    undo: true
+    redo: true
+
+  # `block` applies to block-level editable containers (div, section, etc.)
+  # We disable rich content here too — keeps editors out of trouble.
+  block:
+    bold: true
+    italic: true
+    link: true
+    removeformat: true
+    undo: true
+    redo: true
+
+
+# ---------- TIMEZONE ----------
+# Used for display purposes (commit timestamps, schedule dates, etc.)
+timezone: America/Phoenix
+
+
+# ---------- BRANDING (optional) ----------
+# Customize how your CloudCannon dashboard looks. Cosmetic only.
+# Uncomment when you have a real logo file:
+#
+# branding:
+#   logo: /assets/logo.png
+#   color: "#FFD23F"
