@@ -1,3 +1,6 @@
+Index · HTML
+Copy
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,11 +8,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Faith Banc — A Financial Ecosystem for Ministry</title>
 <meta name="description" content="Faith Banc empowers churches and the businesses within their congregations. Flat-rate processing, free equipment, and recurring revenue for your ministry.">
-
+ 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+ 
 <style>
   :root {
     --bg: #0a0a0a;
@@ -27,7 +30,7 @@
     --serif: 'Fraunces', Georgia, serif;
     --sans: 'Outfit', -apple-system, sans-serif;
   }
-
+ 
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
@@ -38,7 +41,7 @@
     overflow-x: hidden;
     line-height: 1.5;
   }
-
+ 
   /* ---- ATMOSPHERE ---- */
   .atmosphere {
     position: fixed;
@@ -76,7 +79,7 @@
     33% { transform: translate(40px, -30px) scale(1.05); }
     66% { transform: translate(-30px, 30px) scale(0.95); }
   }
-
+ 
   /* Subtle grain */
   body::before {
     content: "";
@@ -88,16 +91,16 @@
     z-index: 1;
     mix-blend-mode: overlay;
   }
-
+ 
   main, header, footer { position: relative; z-index: 2; }
-
+ 
   /* ---- LAYOUT ---- */
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 32px;
   }
-
+ 
   /* ---- REFERRAL BANNER ---- */
   .ref-banner {
     background: linear-gradient(90deg, var(--gold) 0%, var(--gold-deep) 100%);
@@ -113,7 +116,7 @@
   }
   .ref-banner.active { display: block; }
   .ref-banner strong { font-weight: 800; }
-
+ 
   /* ---- HEADER ---- */
   header {
     padding: 24px 0;
@@ -134,21 +137,8 @@
     align-items: center;
     gap: 12px;
   }
-  .brand-mark {
-    width: 38px;
-    height: 38px;
-    border: 1.5px dashed var(--gold);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 7px;
-    font-weight: 800;
-    color: var(--gold);
-    letter-spacing: 0.1em;
-    line-height: 1.2;
-    text-align: center;
-    background: var(--gold-soft);
+  .brand img {
+    border-radius: 6px;
   }
   .brand-name {
     font-family: var(--sans);
@@ -190,7 +180,7 @@
   @media (max-width: 800px) {
     .nav-links { display: none; }
   }
-
+ 
   /* ---- HERO ---- */
   .hero {
     padding: 120px 0 100px;
@@ -278,7 +268,7 @@
   }
   .btn-arrow { transition: transform 0.25s; }
   .btn:hover .btn-arrow { transform: translateX(3px); }
-
+ 
   /* ---- HERO STATS ---- */
   .hero-stats {
     margin-top: 88px;
@@ -316,10 +306,10 @@
     .hero-stat:nth-child(2) { border-right: none; }
     .hero-stat:nth-child(1), .hero-stat:nth-child(2) { border-bottom: 1px solid var(--line); }
   }
-
+ 
   /* ---- SECTION ---- */
   section { padding: 100px 0; position: relative; }
-
+ 
   .section-eyebrow {
     font-size: 11px;
     letter-spacing: 0.32em;
@@ -347,7 +337,7 @@
     color: var(--text-dim);
     max-width: 680px;
   }
-
+ 
   /* ---- AUDIENCE SECTIONS ---- */
   .audience {
     border-top: 1px solid var(--line);
@@ -382,7 +372,7 @@
     background: var(--gold);
     box-shadow: 0 0 10px var(--gold);
   }
-
+ 
   .benefit-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -451,7 +441,7 @@
     position: relative;
     z-index: 1;
   }
-
+ 
   /* ---- IMPACT (savings centerpiece) ---- */
   .impact-block {
     margin-top: 80px;
@@ -513,7 +503,12 @@
     text-transform: uppercase;
     font-weight: 800;
   }
-
+  .impact-figure .divider {
+    margin: 18px 0;
+    height: 1px;
+    background: rgba(0,0,0,0.18);
+  }
+ 
   /* ---- HOW IT WORKS ---- */
   .how-section {
     background: var(--bg-elev);
@@ -570,7 +565,7 @@
     line-height: 1.6;
     color: var(--text-dim);
   }
-
+ 
   /* ---- SIGN UP ---- */
   .signup-section {
     padding: 120px 0;
@@ -695,7 +690,7 @@
     color: var(--text-muted);
     text-align: center;
   }
-
+ 
   /* ---- SHARE BLOCK ---- */
   .share-block {
     max-width: 720px;
@@ -752,7 +747,7 @@
   }
   .share-copy-btn:hover { background: var(--gold-deep); }
   .share-copy-btn.copied { background: #22c55e; color: #fff; }
-
+ 
   /* ---- FOOTER ---- */
   footer {
     padding: 48px 0 32px;
@@ -778,7 +773,7 @@
     color: var(--text-muted);
     font-weight: 600;
   }
-
+ 
   /* ---- ANIMATIONS ---- */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
@@ -796,24 +791,24 @@
 </style>
 </head>
 <body>
-
+ 
 <div class="atmosphere">
   <div class="orb orb-1"></div>
   <div class="orb orb-2"></div>
   <div class="orb orb-3"></div>
 </div>
-
+ 
 <!-- Referral banner appears when ?ref= is in URL -->
 <div class="ref-banner" id="refBanner">
   You were referred by <strong id="refBannerName">—</strong>. Your sign-up will be credited to them.
 </div>
-
+ 
 <header>
   <div class="container">
     <nav class="nav">
       <div class="brand">
-<img src="Faith Banc Eagle.jpg" width="75" height="79" alt=""/>
-<div class="brand-name">FAITH BANC</div>
+        <img src="Faith Banc Eagle.jpg" width="75" height="79" alt="Faith Banc logo"/>
+        <div class="brand-name">FAITH BANC</div>
       </div>
       <ul class="nav-links">
         <li><a href="#churches">Churches</a></li>
@@ -825,9 +820,9 @@
     </nav>
   </div>
 </header>
-
+ 
 <main>
-
+ 
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="container">
@@ -835,14 +830,14 @@
       <h1 class="editable">A Financial Ecosystem<br><span class="accent">Built for Ministry.</span></h1>
       <p class="hero-sub editable">
         Faith Banc empowers churches and the businesses within their congregations.
-        Flat-rate processing. Free equipment options. Recurring revenue for your mission —
+        Flat-rate processing. Free equipment options. Recurring revenue for your mission &mdash;
         without asking your members to give more.
       </p>
       <div class="hero-actions">
         <a href="#signup" class="btn btn-primary">Sign Up Now <span class="btn-arrow">&rarr;</span></a>
         <a href="#churches" class="btn btn-secondary">See How It Works</a>
       </div>
-
+ 
       <div class="hero-stats">
         <div class="hero-stat">
           <div class="stat-num editable">$99.95</div>
@@ -850,7 +845,7 @@
         </div>
         <div class="hero-stat">
           <div class="stat-num editable">$26,910</div>
-          <div class="stat-lbl editable">Avg. Annual Savings to church&nbsp;</div>
+          <div class="stat-lbl editable">Avg. Annual Revenue to Church</div>
         </div>
         <div class="hero-stat">
           <div class="stat-num editable">0%</div>
@@ -863,11 +858,11 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- ============ CHURCHES ============ -->
   <section class="audience" id="churches">
     <div class="container">
-
+ 
       <div class="audience-header reveal">
         <div>
           <div class="audience-tag editable"><span class="dot"></span>For Churches &amp; Ministries</div>
@@ -878,65 +873,65 @@
           Earn recurring revenue from member businesses &mdash; all on one platform built for ministry.
         </p>
       </div>
-
+ 
       <div class="benefit-grid">
         <div class="benefit reveal">
-          <div class="benefit-icon">^&nbsp;</div>
+          <div class="benefit-icon">^</div>
           <h3 class="editable">Flat-Rate Processing</h3>
           <p class="editable">One predictable monthly fee &mdash; no percentages, no surprises. Keep capital inside your community instead of paying it to processors.</p>
         </div>
         <div class="benefit reveal">
-          <div class="benefit-icon">-&nbsp;</div>
-          <h3 class="editable">Free Equipment&nbsp; Options</h3>
+          <div class="benefit-icon">-</div>
+          <h3 class="editable">Free Equipment Options</h3>
           <p class="editable">Terminals, mobile kiosks, and handheld giving devices included. Frictionless giving the moment the Spirit moves.</p>
         </div>
         <div class="benefit reveal">
           <div class="benefit-icon">&infin;</div>
           <h3 class="editable">Recurring Revenue</h3>
-          <p class="editable">The Become a&nbsp; Processor Program turns member-owned businesses into ongoing income for the church — $20/mo per referral plus up too 0.5% of network volume.</p>
+          <p class="editable">The Become a Processor Program turns member-owned businesses into ongoing income for the church &mdash; $20/mo per referral plus up to 0.5% of network volume.</p>
         </div>
         <div class="benefit reveal">
-          <div class="benefit-icon">$&nbsp;</div>
+          <div class="benefit-icon">$</div>
           <h3 class="editable">Faith Banc Capital</h3>
-          <p class="editable">Access to 7-day credit lines, receivable loans,&nbsp; and growth strategies for both churches and member-owned businesses.</p>
+          <p class="editable">Access to 7-day credit lines, receivable loans, and growth strategies for both churches and member-owned businesses.</p>
         </div>
         <div class="benefit reveal">
-          <div class="benefit-icon">+&nbsp;</div>
+          <div class="benefit-icon">+</div>
           <h3 class="editable">Full Giving Platform</h3>
           <p class="editable">Recurring tithing, capital campaigns, missions, and seasonal offerings &mdash; one platform branded to your church.</p>
         </div>
         <div class="benefit reveal">
-          <div class="benefit-icon">=&nbsp;</div>
+          <div class="benefit-icon">=</div>
           <h3 class="editable">Ministry Partner</h3>
           <p class="editable">Guided onboarding, ongoing support, and strategic insight. We don&rsquo;t just sell software &mdash; we help you build a culture of giving.</p>
         </div>
       </div>
-
+ 
       <div class="impact-block reveal">
         <div>
           <div class="impact-eyebrow editable">Real Impact Example</div>
           <div class="impact-headline editable">A church with 100 member-businesses processing $1,000/week each.</div>
           <div class="impact-body editable">
             That&rsquo;s <strong>$400,000/month</strong> in volume. Traditional processors charge ~3% &mdash;
-            <strong>$12,000/month gone to fees</strong>. Faith Banc’s flat model nearly eliminates that cost creating over <strong>$24,000 in donations&nbsp; to the Church. </strong>
+            <strong>$12,000/month gone to fees</strong>. Faith Banc&rsquo;s flat model nearly eliminates that cost, creating over <strong>$24,000 in annual donations to the Church.</strong>
           </div>
         </div>
         <div class="impact-figure">
           <div class="big editable">$142,812</div>
-          <div class="lbl editable">Annual Savings to the businesses</div>
-          <div>--------------------------------------------</div>
+          <div class="lbl editable">Annual Savings to the Businesses</div>
+          <div class="divider"></div>
           <div class="big editable">$24,000</div>
-          <div c;ass="lbl editable"><strong>Annual&nbsp; Revenue to&nbsp; the Church</strong></div>
+          <div class="lbl editable">Annual Revenue to the Church</div>
         </div>
       </div>
-
+ 
     </div>
   </section>
-
+ 
   <!-- ============ BUSINESSES ============ -->
   <section class="audience" id="businesses">
     <div class="container">
-
+ 
       <div class="audience-header reveal">
         <div>
           <div class="audience-tag editable"><span class="dot"></span>For Parishioner-Owned Businesses</div>
@@ -947,12 +942,12 @@
           and your church earns from every transaction &mdash; while you save on rates and earn rewards.
         </p>
       </div>
-
+ 
       <div class="benefit-grid">
         <div class="benefit reveal">
           <div class="benefit-icon">$</div>
           <h3 class="editable">Lower Your Rates</h3>
-          <p class="editable">We match or beat your current processing rate — or place you on Unlimited at $99.95 flat with zero per-transaction fees.</p>
+          <p class="editable">We match or beat your current processing rate &mdash; or place you on Unlimited at $99.95 flat with zero per-transaction fees.</p>
         </div>
         <div class="benefit reveal">
           <div class="benefit-icon">+</div>
@@ -962,12 +957,12 @@
         <div class="benefit reveal">
           <div class="benefit-icon">&#10003;</div>
           <h3 class="editable">Free Equipment Options</h3>
-          <p class="editable">Terminals included at no cost. No upfront investment, no equipment leases, no hidden fees. Kiosks&nbsp; and Handheld free options&nbsp;</p>
+          <p class="editable">Terminals included at no cost. No upfront investment, no equipment leases, no hidden fees. Free options for kiosks and handhelds too.</p>
         </div>
         <div class="benefit reveal">
           <div class="benefit-icon">&#9733;</div>
           <h3 class="editable">Support Your Church</h3>
-          <p class="editable">Every dollar  processed creates an automatic donation to your church — with no out-of-pocket giving from you.</p>
+          <p class="editable">Every dollar processed creates an automatic donation to your church &mdash; with no out-of-pocket giving from you.</p>
         </div>
         <div class="benefit reveal">
           <div class="benefit-icon">&rarr;</div>
@@ -980,10 +975,10 @@
           <p class="editable">Qualify for 7-day credit lines and receivable loans through Faith Banc Capital &mdash; ministry-aligned terms, no predatory rates.</p>
         </div>
       </div>
-
+ 
     </div>
   </section>
-
+ 
   <!-- ============ HOW IT WORKS ============ -->
   <section class="how-section" id="how">
     <div class="container">
@@ -991,7 +986,7 @@
         <div class="section-eyebrow">How It Works</div>
         <h2 class="section-title editable">Three Steps. <span class="accent">No Friction.</span></h2>
       </div>
-
+ 
       <div class="steps">
         <div class="step reveal">
           <div class="step-label editable">For Churches</div>
@@ -1001,7 +996,7 @@
         <div class="step reveal">
           <div class="step-label editable">For Members</div>
           <h4 class="editable">Match or Beat Your Rate</h4>
-          <p class="editable">Business owners in your congregation submit a current statement. We match or beat their rate — or place them on Unlimited at a flat $99.95/month.</p>
+          <p class="editable">Business owners in your congregation submit a current statement. We match or beat their rate &mdash; or place them on Unlimited at a flat $99.95/month.</p>
         </div>
         <div class="step reveal">
           <div class="step-label editable">For The Mission</div>
@@ -1011,11 +1006,11 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- ============ SIGN UP ============ -->
   <section class="signup-section" id="signup">
     <div class="container">
-
+ 
       <div class="reveal">
         <div class="section-eyebrow" style="text-align:center;">Ready to Start</div>
         <h2 class="section-title editable" style="margin: 0 auto; text-align:center;">Sign Up &amp; <span class="accent">Get Started.</span></h2>
@@ -1023,21 +1018,21 @@
           Tell us a little about your church or business. We&rsquo;ll reach out within one business day with a custom proposal.
         </p>
       </div>
-
+ 
       <div class="signup-card reveal">
-
+ 
         <div class="ref-active" id="refActive">
           <div class="check">&#10003;</div>
           <div>Referral active &mdash; you were sent by <strong id="refActiveName">—</strong>. Your sign-up will be credited.</div>
         </div>
-
+ 
         <form id="signupForm" action="#" method="POST" onsubmit="return handleSubmit(event)">
           <input type="hidden" name="referral_source" id="referralSource" value="">
           <input type="hidden" name="utm_source" id="utmSource" value="">
           <input type="hidden" name="utm_medium" id="utmMedium" value="">
           <input type="hidden" name="utm_campaign" id="utmCampaign" value="">
           <input type="hidden" name="landing_url" id="landingUrl" value="">
-
+ 
           <div class="form-grid">
             <div class="form-field">
               <label for="iam">I am a</label>
@@ -1073,12 +1068,12 @@
               <textarea id="notes" name="notes" placeholder="Current processor, monthly volume, questions&hellip;"></textarea>
             </div>
           </div>
-
+ 
           <button type="submit" class="form-submit">Submit &amp; Schedule a Call</button>
           <div class="form-note editable">By submitting, you agree to be contacted by a Faith Banc representative. We&rsquo;ll never share your information.</div>
         </form>
       </div>
-
+ 
       <!-- Share-your-link block (for affiliates / pastors) -->
       <div class="share-block reveal">
         <h4 class="editable">Are you a referral partner?</h4>
@@ -1091,28 +1086,28 @@
           Tip: Add <code style="color: var(--gold);">?ref=YOUR-CODE</code> to the end of the URL to create a personal tracking link.
         </p>
       </div>
-
+ 
     </div>
   </section>
-
+ 
 </main>
-
+ 
 <footer>
   <div class="container">
     <div class="tag editable"><span class="gold">Faith Banc</span> &mdash; where every swipe supports the mission.</div>
     <div class="small editable">A Ministry Partner, Not Just a Platform &middot; &copy; <span id="year">2026</span> Faith Banc</div>
   </div>
 </footer>
-
+ 
 <script>
   // ============ REFERRAL TRACKING ============
   // Captures ?ref=, ?source=, and standard UTM params from the URL,
   // displays the referral source on the page, and pre-populates hidden form fields
   // so the sign-up gets credited to whoever sent the visitor.
-
+ 
   (function() {
     const params = new URLSearchParams(window.location.search);
-
+ 
     // Primary referral param (in priority order)
     const refCode =
       params.get('ref') ||
@@ -1120,12 +1115,12 @@
       params.get('referral') ||
       params.get('r') ||
       '';
-
+ 
     // UTM params (standard marketing tracking)
     const utmSource   = params.get('utm_source')   || '';
     const utmMedium   = params.get('utm_medium')   || '';
     const utmCampaign = params.get('utm_campaign') || '';
-
+ 
     // Format the ref code for display: "saint-mark-ame" -> "Saint Mark Ame"
     function prettify(code) {
       if (!code) return '';
@@ -1134,33 +1129,33 @@
         .replace(/\b\w/g, c => c.toUpperCase())
         .trim();
     }
-
+ 
     if (refCode) {
       const pretty = prettify(refCode);
-
+ 
       // Top banner
       const banner = document.getElementById('refBanner');
       const bannerName = document.getElementById('refBannerName');
       bannerName.textContent = pretty;
       banner.classList.add('active');
-
+ 
       // Inline notice in the form card
       const refActive = document.getElementById('refActive');
       const refActiveName = document.getElementById('refActiveName');
       refActiveName.textContent = pretty;
       refActive.classList.add('active');
-
+ 
       // Persist for cross-page navigation (so the credit survives if user clicks around)
       try { sessionStorage.setItem('faithbanc_ref', refCode); } catch (e) {}
     }
-
+ 
     // Hidden form fields
     document.getElementById('referralSource').value = refCode;
     document.getElementById('utmSource').value = utmSource;
     document.getElementById('utmMedium').value = utmMedium;
     document.getElementById('utmCampaign').value = utmCampaign;
     document.getElementById('landingUrl').value = window.location.href;
-
+ 
     // Build the share link for affiliates: pre-fills the current ref code if one exists
     const baseUrl = window.location.origin + window.location.pathname;
     const shareLink = refCode
@@ -1168,7 +1163,7 @@
       : baseUrl + '?ref=YOUR-CODE';
     document.getElementById('shareLink').value = shareLink;
   })();
-
+ 
   // ============ COPY LINK ============
   function copyLink() {
     const input = document.getElementById('shareLink');
@@ -1194,7 +1189,7 @@
       }, 2000);
     }
   }
-
+ 
   // ============ FORM SUBMIT (placeholder) ============
   // Replace this with your actual form handler — Formspree, Netlify Forms,
   // a custom backend endpoint, or a service like HubSpot/Salesforce.
@@ -1202,10 +1197,10 @@
     e.preventDefault();
     const form = e.target;
     const data = Object.fromEntries(new FormData(form).entries());
-
+ 
     // For now: log the captured data (including referral) and show a success state.
     console.log('Form submission:', data);
-
+ 
     // Replace below with: fetch('/your-endpoint', { method: 'POST', body: ... })
     alert(
       'Thanks, ' + data.full_name + '! We\'ll be in touch within one business day.' +
@@ -1214,7 +1209,7 @@
     form.reset();
     return false;
   }
-
+ 
   // ============ SCROLL REVEAL ============
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -1224,12 +1219,12 @@
       }
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
-
+ 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
+ 
   // Year
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
+ 
 </body>
 </html>
