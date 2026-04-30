@@ -1,0 +1,35 @@
+ssg: static
+paths:
+  uploads: assets/uploads
+  static: ''
+collections_config:
+  pages:
+    path: ''
+    output: true
+    filter:
+      base: strict
+    include:
+      - index.html
+    name: Pages
+    icon: web
+_inputs:
+  default:
+    instance_value: UUID
+_editor:
+  default_path: /index.html
+_editables:
+  text:
+    bold: true
+    italic: true
+    link: true
+    removeformat: true
+    undo: true
+    redo: true
+  block:
+    bold: true
+    italic: true
+    link: true
+    removeformat: true
+    undo: true
+    redo: true
+timezone: America/Phoenix
